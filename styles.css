@@ -1,0 +1,12 @@
+:root {
+  /* Cores */
+  --bg-color: #0a3150;
+  --title-color: #f8f7f8;
+  --font-primary-color: #040707;
+  --font-secondary-color: #dcc3a9;
+  --font-color: #252021;
+
+  /* Fonte */
+  --font-family: "Inter", sans-serif;
+  
+}
