@@ -35,8 +35,24 @@ html {
   color: var(--title-color);
 }
 
+.grid {
+  display: grid;
+}
+
 .flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.desktop-only {
+  display: none;
 }
 
 .container {
@@ -81,15 +97,59 @@ header {
 
 .init {
   background-color: var(--bg-color);
-  height: 50vh;
+  min-height: 88vh;
 
-  & img {
-    width: 20rem;
+  & .logo {
     justify-content: center;
     align-items: center;
   }
+
+  & img {
+    width: 20rem;
+  }
 }
 
+main {
+  background-color: #f8f7f8;
+  color: #0a3150;
+
+  & #about {
+
+    & h2 {
+      color: inherit;
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    & .about {
+      & figure {
+
+        & img {
+          max-width: 20rem;
+          text-align: center;
+
+        }
+      }
+
+      & .content {
+        & h3 {
+          font-size: 1.3rem;
+          font-weight: 800;
+        }
+
+        & p {
+          color: inherit;
+          text-align: justify;
+
+          & strong {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 @media (width >=80em) {
@@ -100,6 +160,10 @@ header {
 
   .container {
     --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: inline;
   }
 
   header {
@@ -119,5 +183,33 @@ header {
       width: 40rem;
     }
 
+  }
+
+  main {
+    & #about {
+      & h2 {
+        font-size: 4rem;
+        margin-block: 3rem;
+      }
+      & .about {
+        /* flex-direction: row; */
+        grid-template-columns: repeat(2, 1fr);
+        & figure {
+          & img {
+            max-width: 36rem;
+            text-align: center;
+          }
+        }
+        & .content {
+          align-self: center;
+          & h3 {
+            font-size: 1.5rem;
+          }
+          & p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
   }
 }
