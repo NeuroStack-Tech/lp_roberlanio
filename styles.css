@@ -8,5 +8,116 @@
 
   /* Fonte */
   --font-family: "Inter", sans-serif;
-  
+
+  --px-lg: 1.5rem;
+  --py-base: 1rem
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+html {
+  color: var(--title-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  margin-inline: auto;
+}
+
+.py-base {
+  padding-block: var(--py-base);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--bg-color);
+
+  & .navbar {
+    position: sticky;
+    align-items: center;
+
+    & a {
+      margin-right: auto;
+      color: inherit;
+
+      &:hover {
+        color: var(--font-secondary-color);
+      }
+
+      & img {
+        width: 10rem;
+      }
+    }
+
+    & ul[role="list"] {
+      list-style: none;
+    }
+  }
+}
+
+.init {
+  background-color: var(--bg-color);
+  height: 50vh;
+
+  & img {
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+@media (width >=80em) {
+  :root {
+    --px-lg: 2rem;
+    --py-base: 1.5rem
+  }
+
+  .container {
+    --max-width: 80rem;
+  }
+
+  header {
+    & .navbar {
+      & a {
+        font-size: 1.3rem;
+
+        & img {
+          width: 12rem;
+        }
+      }
+    }
+  }
+
+  .init {
+    & img {
+      width: 40rem;
+    }
+
+  }
 }
