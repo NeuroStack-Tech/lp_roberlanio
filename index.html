@@ -1,81 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roberlânio Moura</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roberlânio Moura</title>
-  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <body>
+    <header>
+      <div class="container navbar flex py-base">
+        <a href="./index.html">
+          <img
+            src="./images/header-logo.jpg"
+            alt="logomarca Roberlânio advogado"
+          />
+        </a>
+        <nav>
+          <ul role="list">
+            <li>
+              <a href="#about">Sobre Mim</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div class="container navbar flex py-base">
-      <a href="./index.html">
-        <img src="./images/header-logo.jpg" alt="logomarca Roberlânio advogado">
-      </a>
-      <nav>
-        <ul role="list">
-          <li>
-            <a href="#about">Sobre Mim</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="init py-base flex">
-    <div class="container logo flex">
-      <img src="./images/image-logo.jpg" alt="Logomarca Roberlânio">
-    </div>
-  </section>
-
-  <main class="py-base">
-    <section id="about" class="container">
-      <h2>Sobre Mim</h2>
-
-      <div class="about grid flex-column gap-1">
-        <figure>
-          <img src="./images/1711493337081.png" alt="">
-        </figure>
-        <div class="content flex flex-column gap-1">
-          <h3>
-            Roberlânio Moura Cândido – Advogado | OAB-PB 33022
-            Formado pela Universidade Federal da Paraíba – UFPB
-          </h3>
-          <p>
-            Minha trajetória até a advocacia é marcada por resiliência, dedicação e escolhas conscientes. Antes mesmo de ingressar na área jurídica, trilhei caminhos sólidos na Gestão Empresarial, tendo concluído minha primeira graduação e uma especialização em Gestão Pública pelo IFPB. No entanto, as oportunidades que a vida nos apresenta não surgem por acaso – e foi justamente seguindo uma dessas oportunidades que iniciei minha formação em Direito pela Universidade Federal da Paraíba (UFPB).
-          </p>
-          <p>
-            Confesso que o início foi desafiador. Os conteúdos jurídicos não despertaram de imediato minha identificação. Mas, com o tempo, essa relação evoluiu, e nasceu em mim uma verdadeira vocação para a defesa da justiça e dos direitos fundamentais.
-          </p>
-        </div>
-        <div class="content flex flex-column gap-1">
-          <p>
-            Durante essa fase acadêmica, conciliava os estudos com a administração de um pequeno restaurante de comida chinesa, que fundei ao lado da minha esposa. A rotina era intensa, exigindo um equilíbrio constante entre família, negócios e universidade. Foi então que, em um gesto de extrema generosidade e parceria, minha esposa decidiu assumir sozinha o comando do restaurante. Essa atitude foi determinante para que eu pudesse me dedicar integralmente ao último ano da graduação, enfrentando com foco e determinação todas as etapas: o TCC, as atividades complementares, os estágios, audiências, congressos e, claro, o tão temido – e esperado – Exame da OAB. Com muita luta e, acima de tudo, fé em Deus e no apoio incondicional da minha família, fui aprovado.
-          </p>
-          <p>
-            Hoje, com orgulho e compromisso, atuo como advogado e integro algumas comissões na OAB-PB, tais como a <strong>Comissão da Jovem Advocacia (CJA)</strong>, e a <strong>Comissão de Direito Previdenciário (CDPREV)</strong> , assim como já fui membro da <strong>Comissão de Direito do Consumidor (CODECON)</strong>. Essas experiências têm sido fundamentais para meu crescimento profissional e para a ampliação do impacto social da advocacia.
-          </p>
-          <p>
-            Exerço a advocacia com um propósito claro: defender os direitos dos cidadãos, zelando pela legalidade, pela justiça e, acima de tudo, pela dignidade da pessoa humana. Atuo guiado por princípios éticos inegociáveis, como responsabilidade, comprometimento, excelência técnica e sensibilidade humana.
-          </p>
-          <p>
-            Porque mais do que um ofício, advogar é ser voz. É ser ponte. É ser instrumento de transformação social.
-          </p>
-        </div>
-        <figure class="desktop-only">
-          <img src="./images/1711493494318.png" alt="">
-        </figure>
+    <section class="init py-base flex">
+      <div class="container logo flex">
+        <img src="./images/image-logo.jpg" alt="Logomarca Roberlânio" />
       </div>
     </section>
-  </main>
-</body>
 
+    <main class="py-base">
+      <section id="about" class="container">
+        <h2>Sobre Mim</h2>
+
+        <div class="about grid flex-column gap-1">
+          <figure>
+            <img
+              class="imgRoberlandio1"
+              src="./images/1711493337081.png"
+              alt=""
+            />
+          </figure>
+          <div class="content flex flex-column gap-1">
+            <h3>Roberlânio Moura Cândido – Advogado | OAB-PB 33022</br>
+             Formado pela 
+              <em class="italico">
+                Universidade Federal da Paraíba – UFPB 
+              </em>
+            </h3>
+            <p>
+              Minha trajetória até a advocacia é marcada por resiliência,
+              dedicação e escolhas conscientes. Antes mesmo de ingressar na área
+              jurídica, trilhei caminhos sólidos na Gestão Empresarial, tendo
+              concluído minha primeira graduação e uma especialização em Gestão
+              Pública pelo IFPB. No entanto, as oportunidades que a vida nos
+              apresenta não surgem por acaso – e foi justamente seguindo uma
+              dessas oportunidades que iniciei minha formação em Direito pela
+              Universidade Federal da Paraíba (UFPB).
+            </p>
+            <p class="ultimoParagrafo1">
+              Confesso que o início foi desafiador. Os conteúdos jurídicos não
+              despertaram de imediato minha identificação. Mas, com o tempo,
+              essa relação evoluiu, e nasceu em mim uma verdadeira vocação para
+              a defesa da justiça e dos direitos fundamentais. Durante essa fase
+              acadêmica, conciliava os estudos com a administração de um pequeno
+              restaurante de comida chinesa, que fundei ao lado da minha esposa.
+              A rotina era intensa, exigindo um equilíbrio constante entre
+              família, negócios e universidade.
+            </p>
+          </div>
+          <div class="content flex flex-column gap-1">
+            <p class="primeiroParagrafo">
+              Foi então que, em um gesto de extrema generosidade e parceria,
+              minha esposa decidiu assumir sozinha o comando do restaurante.
+              Essa atitude foi determinante para que eu pudesse me dedicar
+              integralmente ao último ano da graduação, enfrentando com foco e
+              determinação todas as etapas: o TCC, as atividades complementares,
+              os estágios, audiências, congressos e, claro, o tão temido – e
+              esperado – Exame da OAB. Com muita luta e, acima de tudo, fé em
+              Deus e no apoio incondicional da minha família, fui aprovado.
+            </p>
+            <p>
+              Hoje, com orgulho e compromisso, atuo como advogado e integro
+              algumas comissões na OAB-PB, tais como a
+              <strong>Comissão da Jovem Advocacia (CJA)</strong>, e a
+              <strong>Comissão de Direito Previdenciário (CDPREV)</strong> ,
+              assim como já fui membro da
+              <strong>Comissão de Direito do Consumidor (CODECON)</strong>.
+              Essas experiências têm sido fundamentais para meu crescimento
+              profissional e para a ampliação do impacto social da advocacia.
+            </p>
+            <p>
+              Exerço a advocacia com um propósito claro: defender os direitos
+              dos cidadãos, zelando pela legalidade, pela justiça e, acima de
+              tudo, pela dignidade da pessoa humana. Atuo guiado por princípios
+              éticos inegociáveis, como responsabilidade, comprometimento,
+              excelência técnica e sensibilidade humana.
+            </p>
+            <p class="ultimoParagrafo2">
+              Porque mais do que um ofício, advogar é ser voz. É ser ponte. É
+              ser instrumento de transformação social.
+            </p>
+          </div>
+          <figure class="desktop-only">
+            <img src="./images/1711493494318.png" alt="" />
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
 </html>

@@ -47,15 +47,11 @@ html {
   flex-direction: column;
 }
 
-.gap-1 {
-  gap: 1rem;
-}
-
 .desktop-only {
   display: none;
 }
 
-.container {
+.container { 
   --max-width: 375px;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
   margin-inline: auto;
@@ -110,7 +106,7 @@ header {
 }
 
 main {
-  background-color: #f8f7f8;
+  background-color: #f0f0f0; /*abraao*/
   color: #0a3150;
 
   & #about {
@@ -126,25 +122,49 @@ main {
       & figure {
 
         & img {
-          max-width: 20rem;
+          margin-top: 2rem; /*abraao*/
+          max-width: 20rem; /*abraao*/
           text-align: center;
 
         }
       }
 
       & .content {
+
         & h3 {
+          border-radius: 8rem 0 0 0; /*abraao*/
+          padding: 3rem; /*abraao*/
+          background-color: #f8f7f8; /*abraao*/
           font-size: 1.3rem;
           font-weight: 800;
         }
-
+        & h3 .italico{
+          font-style: italic; /*abraao*/
+        }
         & p {
+          margin: 0; /*abraao*/
+          padding: 1rem 3rem 1rem 2rem; /*abraao*/
+          background-color: #f8f7f8; /*abraao*/
           color: inherit;
           text-align: justify;
 
           & strong {
             font-weight: bold;
           }
+        }
+
+        & .primeiroParagrafo{ /*abraao*/
+          padding: 3rem 3rem 2rem 2rem; /*abraao*/
+          border-radius: 0 8rem 0 0; /*abraao*/
+        }
+
+        & .ultimoParagrafo1{ /*abraao*/
+          padding-bottom: 4rem; /*abraao*/
+          border-radius: 0 0 0 8rem; /*abraao*/
+        }
+        & .ultimoParagrafo2{ /*abraao*/
+          padding: 2rem 4rem 3rem 2rem; /*abraao*/
+          border-radius: 0 0 8rem 0; /*abraao*/
         }
       }
     }
