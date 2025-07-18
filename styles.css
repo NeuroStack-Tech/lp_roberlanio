@@ -238,6 +238,14 @@ main {
   background-color: #0a3150;
   padding: 2rem;
 }
+.tituloSectionAposentadoria{
+  color: #f8f7f8;
+  text-align: center;
+  margin: 0;
+  padding: 1rem 2.5rem 2.5rem 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
 
 .sectionAposentadoria img{
   margin: 1rem 7rem 0 1rem;
@@ -287,4 +295,129 @@ main {
   font-weight: 400;
   font-size: 0.9rem;
   margin-left: 1rem;
+}
+
+.footer{
+  margin-top: 20rem;  /*enquanto nao adiciona o formulario usei pra ter noçao de espaço*/
+  background-color: #0a3150;
+
+  & .rgProfissional{
+    padding-top: 1.3rem;
+    text-align: center;
+  }
+
+  & .OAB{
+    color: #dcc3a9;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+.rodape{
+  padding-bottom:1rem ;
+  border-bottom: solid 1px rgb(31, 70, 103);
+  display: flex;
+
+
+  & .marca{
+    list-style: none;
+    margin: 0.5rem auto;
+
+    & .logo {
+      display: flex;
+      & h3{
+        color: #f8f7f8;
+        text-align:start;
+        font-size: 2.9rem;
+        font-weight: 700;
+      }
+
+      img{
+        margin-top: 0.7rem;
+        margin-right: 0.5rem;
+        margin-left: 2rem;
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    & .slogan{
+      padding: 0.5rem 0 2rem 0 ;
+      font-size: 1rem;
+    }
+  }
+
+  & .contatos{
+    list-style: none;
+    margin: 0 auto;
+
+    & h3{
+      color: #dcc3a9;
+      font-size: 1.5rem;
+      font-weight: 700
+    }
+
+    & .telefone{
+      padding-top: 1rem;
+      font-weight: 800;
+    }
+
+    & .email{
+      padding-top: 1rem;
+      font-weight: 800;
+    }
+
+    & .endereco{
+      padding-top: 1rem;
+      font-weight: 800;
+    }
+  }
+
+  & .socialLinks{
+    list-style: none;
+    margin: auto;
+    
+    & h3{
+      color: #dcc3a9;
+      font-size: 1.5rem;
+      font-weight: 700
+    }
+    
+    & .whatsapp{
+      margin: 1rem;
+    }
+
+    & .facebook{
+      margin: 1rem;
+    }
+
+    & .instagram{
+      margin: 1rem;
+    }
+
+    & .linkedin{
+      margin: 1rem;
+    }
+  }
+}
+.consideracoesFinais{
+  padding: 1.7rem;
+  background-color: #0a3150;
+  margin:auto;
+  font-size: 0.6rem;
+
+  & h4{
+    text-align: center;
+    color: rgb(42, 93, 135);
+  
+    & a{
+    font-weight: 600;
+    color: rgb(42, 93, 135);
+    font-style: italic;
+    text-decoration:underline;
+  }
+  }
+
 }
