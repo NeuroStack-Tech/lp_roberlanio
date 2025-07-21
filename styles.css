@@ -173,15 +173,161 @@ main {
             font-weight: bold;
           }
         }
-
-        /* abraao */
-
       }
     }
   }
 
   & #planning {
+    background: url(./images/1711493534530.jpg) center/cover no-repeat;
 
+    .tituloSectionAposentadoria {
+      color: #0a3150;
+      text-align: center;
+      margin: 0;
+      padding: 1rem 2.5rem 2.5rem 2.5rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+
+    .boxTextAposentadoria {
+      border-radius: 3rem;
+      box-shadow: 0px 1px 3px 1px #000;
+      color: #0a3150;
+      margin: auto;
+      background-color: #f8f7f8;
+    }
+
+    .textAposentadoria {
+      padding: 3rem;
+      grid-column: 2/3;
+      border-radius: 2rem;
+      background-color: #f8f7f891;
+      box-shadow: rgba(0, 0, 0, 0.5) -14px 20px 10px 0px;
+    }
+
+    .textAposentadoria p {
+      max-width: 40rem;
+      font-weight: 500;
+      font-size: 1rem;
+      margin: 1rem 1rem 1rem 0;
+    }
+
+    .listaPlanejamentoAposentadoria {
+      padding: 0 1rem;
+    }
+
+    .listaPlanejamentoAposentadoria li {
+      max-width: 35rem;
+      box-shadow: -14px 20px 10px 0px rgba(0, 0, 0, 0.5);
+      font-size: 0.8rem;
+      list-style: decimal;
+      color: #0a3150;
+      border-radius: 1rem;
+      padding: 0.1rem 0;
+      background-color: #f8f7f880;
+      margin: 1rem;
+    }
+
+    .listaPlanejamentoAposentadoria li p {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-left: 1rem;
+    }
+  }
+
+  #area-atuacao {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-flow: row wrap;
+    width: 1000px;
+    margin: 3rem auto;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .elemento {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 0.6rem;
+    /* border: 2px solid black; */
+  }
+
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+  .card {
+    user-select: none;
+    box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.34);
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--px-lg);
+    width: 300px;
+    height: 200px;
+    background-color: var(--font-secondary-color);
+    transition: 0.6s;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    transform: scale(1.07)
+  }
+
+  #btn1,
+  #btn2,
+  #btn3,
+  #btn4,
+  #btn5,
+  #btn6,
+  #btn7,
+  #btn8 {
+    visibility: hidden;
+    display: none;
+  }
+
+  #btn1:checked~.secao1,
+  #btn2:checked~.secao2,
+  #btn3:checked~.secao3,
+  #btn4:checked~.secao4,
+  #btn5:checked~.secao5,
+  #btn6:checked~.secao6,
+  #btn7:checked~.secao7,
+  #btn8:checked~.secao8 {
+    display: block
+  }
+
+  #btn1:checked,
+  #btn2:checked,
+  #btn3:checked,
+  #btn4:checked,
+  #btn5:checked,
+  #btn6:checked,
+  #btn7:checked,
+  #btn8:checked {
+    display: block;
+  }
+
+  .secao {
+    user-select: none;
+    width: 300px;
+    background-color: var(--font-secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.34);
   }
 }
 
@@ -271,7 +417,9 @@ main {
     }
 
     & #planning {
-      background-color: #0a315040;
+      background: url(./images/1711493534530.jpg) center/cover no-repeat;
+      padding-block: 5rem;
+
       & .planning {
         & .box-aposentadoria {
           grid-template-columns: repeat(2, 1fr);
@@ -281,67 +429,7 @@ main {
   }
 }
 
-.sectionAposentadoria {
-  background-color: #0a3150;
-  padding: 2rem;
-}
 
-.tituloSectionAposentadoria {
-  color: #f8f7f8;
-  text-align: center;
-  margin: 0;
-  padding: 1rem 2.5rem 2.5rem 2.5rem;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.sectionAposentadoria img {
-  margin: 1rem 7rem 0 1rem;
-}
-
-.boxTextAposentadoria {
-  /* display: flex; */
-  /* max-width: 80rem; */
-  /* height: auto; */
-  border-radius: 3rem;
-  box-shadow: 0px 1px 3px 1px #000;
-  color: #0a3150;
-  margin: auto;
-  background-color: #f8f7f8;
-}
-
-.textAposentadoria {
-  padding: 2rem 3rem 1rem 0;
-}
-
-.textAposentadoria p {
-  max-width: 40rem;
-  font-weight: 500;
-  font-size: 1rem;
-  margin: 1rem 1rem 1rem 0;
-}
-
-.listaPlanejamentoAposentadoria {
-  padding: 0 1rem;
-}
-
-.listaPlanejamentoAposentadoria li {
-  max-width: 35rem;
-  box-shadow: 0px 1px 10px 0.2px rgb(234, 234, 234);
-  font-size: 0.8rem;
-  list-style: decimal;
-  color: #0a3150;
-  border-radius: 1rem;
-  padding: 0.1rem 0;
-  background-color: #f8f7f8;
-  margin: 1rem;
-}
-
-.listaPlanejamentoAposentadoria li p {
-  font-weight: 400;
-  font-size: 0.9rem;
-  margin-left: 1rem;
-}
 
 .footer {
   margin-top: 20rem;
