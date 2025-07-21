@@ -43,6 +43,14 @@ html {
   display: flex;
 }
 
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -51,7 +59,7 @@ html {
   display: none;
 }
 
-.container { 
+.container {
   --max-width: 375px;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
   margin-inline: auto;
@@ -61,8 +69,20 @@ html {
   padding-block: var(--py-base);
 }
 
+.border-radius-left {
+  border-radius: 0;
+}
+
+.border-radius-right {
+  border-radius: 0;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 header {
@@ -75,13 +95,14 @@ header {
     & a {
       margin-right: auto;
       color: inherit;
+      font-size: 1.3rem;
 
       &:hover {
         color: var(--font-secondary-color);
       }
 
       & img {
-        width: 10rem;
+        width: 12rem;
       }
     }
 
@@ -106,10 +127,10 @@ header {
 }
 
 main {
-  background-color: #f0f0f0; /*abraao*/
   color: #0a3150;
 
   & #about {
+    background-color: #dcc3a940;
 
     & h2 {
       color: inherit;
@@ -122,29 +143,29 @@ main {
       & figure {
 
         & img {
-          margin-top: 2rem; /*abraao*/
-          max-width: 20rem; /*abraao*/
+          margin-block: 2rem;
           text-align: center;
-
         }
       }
 
       & .content {
+        background-color: #f8f7f8;
 
         & h3 {
-          border-radius: 8rem 0 0 0; /*abraao*/
-          padding: 3rem; /*abraao*/
-          background-color: #f8f7f8; /*abraao*/
+          border-radius: 8rem 0 0 0;
+          padding: 3rem;
           font-size: 1.3rem;
           font-weight: 800;
         }
-        & h3 .italico{
-          font-style: italic; /*abraao*/
+
+        & h3 .italico {
+          font-style: italic;
         }
+
         & p {
-          margin: 0; /*abraao*/
-          padding: 1rem 3rem 1rem 2rem; /*abraao*/
-          background-color: #f8f7f8; /*abraao*/
+          margin: 0;
+          padding: 1rem;
+
           color: inherit;
           text-align: justify;
 
@@ -153,21 +174,14 @@ main {
           }
         }
 
-        & .primeiroParagrafo{ /*abraao*/
-          padding: 3rem 3rem 2rem 2rem; /*abraao*/
-          border-radius: 0 8rem 0 0; /*abraao*/
-        }
+        /* abraao */
 
-        & .ultimoParagrafo1{ /*abraao*/
-          padding-bottom: 4rem; /*abraao*/
-          border-radius: 0 0 0 8rem; /*abraao*/
-        }
-        & .ultimoParagrafo2{ /*abraao*/
-          padding: 2rem 4rem 3rem 2rem; /*abraao*/
-          border-radius: 0 0 8rem 0; /*abraao*/
-        }
       }
     }
+  }
+
+  & #planning {
+
   }
 }
 
@@ -184,6 +198,14 @@ main {
 
   .desktop-only {
     display: inline;
+  }
+
+  .border-radius-left {
+    border-radius: 8rem 0 0 8rem;
+  }
+
+  .border-radius-right {
+    border-radius: 0 8rem 8rem 0;
   }
 
   header {
@@ -211,34 +233,60 @@ main {
         font-size: 4rem;
         margin-block: 3rem;
       }
+
       & .about {
         /* flex-direction: row; */
         grid-template-columns: repeat(2, 1fr);
+
         & figure {
           & img {
-            max-width: 36rem;
             text-align: center;
           }
         }
+
         & .content {
           align-self: center;
+
           & h3 {
             font-size: 1.5rem;
           }
+
           & p {
             font-size: 1.2rem;
           }
+
+          & .primeiroParagrafo {
+            padding: 3rem 3rem 2rem 2rem;
+          }
+
+          & .ultimoParagrafo1 {
+            padding-bottom: 4rem;
+          }
+
+          & .ultimoParagrafo2 {
+            padding: 2rem 4rem 3rem 2rem;
+          }
+        }
+      }
+    }
+
+    & #planning {
+      background-color: #0a315040;
+      & .planning {
+        & .box-aposentadoria {
+          grid-template-columns: repeat(2, 1fr);
         }
       }
     }
   }
 }
 
-.sectionAposentadoria{
+.sectionAposentadoria {
   background-color: #0a3150;
   padding: 2rem;
 }
-.tituloSectionAposentadoria{
+
+.tituloSectionAposentadoria {
   color: #f8f7f8;
   text-align: center;
   margin: 0;
@@ -247,16 +295,14 @@ main {
   font-weight: 700;
 }
 
-.sectionAposentadoria img{
+.sectionAposentadoria img {
   margin: 1rem 7rem 0 1rem;
-  width: auto;
-  height: 35rem;
 }
 
-.boxTextAposentadoria{
-  display: flex;
-  max-width: 80rem ;
-  height: auto;
+.boxTextAposentadoria {
+  /* display: flex; */
+  /* max-width: 80rem; */
+  /* height: auto; */
   border-radius: 3rem;
   box-shadow: 0px 1px 3px 1px #000;
   color: #0a3150;
@@ -264,26 +310,26 @@ main {
   background-color: #f8f7f8;
 }
 
-.textAposentadoria{
+.textAposentadoria {
   padding: 2rem 3rem 1rem 0;
 }
 
-.textAposentadoria p{
+.textAposentadoria p {
   max-width: 40rem;
   font-weight: 500;
   font-size: 1rem;
   margin: 1rem 1rem 1rem 0;
 }
 
-.listaPlanejamentoAposentadoria{
+.listaPlanejamentoAposentadoria {
   padding: 0 1rem;
 }
 
-.listaPlanejamentoAposentadoria li{
-  max-width: 35rem ;
+.listaPlanejamentoAposentadoria li {
+  max-width: 35rem;
   box-shadow: 0px 1px 10px 0.2px rgb(234, 234, 234);
   font-size: 0.8rem;
-  list-style:decimal;
+  list-style: decimal;
   color: #0a3150;
   border-radius: 1rem;
   padding: 0.1rem 0;
@@ -291,22 +337,23 @@ main {
   margin: 1rem;
 }
 
-.listaPlanejamentoAposentadoria li p{
+.listaPlanejamentoAposentadoria li p {
   font-weight: 400;
   font-size: 0.9rem;
   margin-left: 1rem;
 }
 
-.footer{
-  margin-top: 20rem;  /*enquanto nao adiciona o formulario usei pra ter noçao de espaço*/
+.footer {
+  margin-top: 20rem;
+  /*enquanto nao adiciona o formulario usei pra ter noçao de espaço*/
   background-color: #0a3150;
 
-  & .rgProfissional{
+  & .rgProfissional {
     padding-top: 1.3rem;
     text-align: center;
   }
 
-  & .OAB{
+  & .OAB {
     color: #dcc3a9;
     text-align: center;
     font-size: 2.5rem;
@@ -315,26 +362,27 @@ main {
   }
 }
 
-.rodape{
-  padding-bottom:1rem ;
+.rodape {
+  padding-bottom: 1rem;
   border-bottom: solid 1px rgb(31, 70, 103);
   display: flex;
 
 
-  & .marca{
+  & .marca {
     list-style: none;
     margin: 0.5rem auto;
 
     & .logo {
       display: flex;
-      & h3{
+
+      & h3 {
         color: #f8f7f8;
-        text-align:start;
+        text-align: start;
         font-size: 2.9rem;
         font-weight: 700;
       }
 
-      img{
+      img {
         margin-top: 0.7rem;
         margin-right: 0.5rem;
         margin-left: 2rem;
@@ -343,81 +391,82 @@ main {
       }
     }
 
-    & .slogan{
-      padding: 0.5rem 0 2rem 0 ;
+    & .slogan {
+      padding: 0.5rem 0 2rem 0;
       font-size: 1rem;
     }
   }
 
-  & .contatos{
+  & .contatos {
     list-style: none;
     margin: 0 auto;
 
-    & h3{
+    & h3 {
       color: #dcc3a9;
       font-size: 1.5rem;
       font-weight: 700
     }
 
-    & .telefone{
+    & .telefone {
       padding-top: 1rem;
       font-weight: 800;
     }
 
-    & .email{
+    & .email {
       padding-top: 1rem;
       font-weight: 800;
     }
 
-    & .endereco{
+    & .endereco {
       padding-top: 1rem;
       font-weight: 800;
     }
   }
 
-  & .socialLinks{
+  & .socialLinks {
     list-style: none;
     margin: auto;
-    
-    & h3{
+
+    & h3 {
       color: #dcc3a9;
       font-size: 1.5rem;
       font-weight: 700
     }
-    
-    & .whatsapp{
+
+    & .whatsapp {
       margin: 1rem;
     }
 
-    & .facebook{
+    & .facebook {
       margin: 1rem;
     }
 
-    & .instagram{
+    & .instagram {
       margin: 1rem;
     }
 
-    & .linkedin{
+    & .linkedin {
       margin: 1rem;
     }
   }
 }
-.consideracoesFinais{
+
+.consideracoesFinais {
   padding: 1.7rem;
   background-color: #0a3150;
-  margin:auto;
+  margin: auto;
   font-size: 0.6rem;
 
-  & h4{
+  & h4 {
     text-align: center;
     color: rgb(42, 93, 135);
-  
-    & a{
-    font-weight: 600;
-    color: rgb(42, 93, 135);
-    font-style: italic;
-    text-decoration:underline;
-  }
+
+    & a {
+      font-weight: 600;
+      color: rgb(42, 93, 135);
+      font-style: italic;
+      text-decoration: underline;
+    }
   }
 
 }
