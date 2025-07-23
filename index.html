@@ -195,7 +195,7 @@
                 3. Já recebeu algum benefício previdenciário antes?
               </label>
               <select id="opcao" required>
-                <option value=""></option>
+                <option value="selecione">Selecione...</option>
                 <option value="Sim">Sim</option>
                 <option value="">Não</option>
               </select>
@@ -205,7 +205,6 @@
             </form>
           </div>
         </div>
-
         <div class="elemento card-2">
           <input id="btn2" type="checkbox">
           <div class="cards">
@@ -227,6 +226,7 @@
               <button type="submit">
                 Fale Comigo
               </button>
+            </form>
           </div>
         </div>
         <div class="elemento card-3">
@@ -235,7 +235,22 @@
             <label for="btn3" class="card">3. Aposentadoria por Invalidez</label>
           </div>
           <div class="secao secao3">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Para quem não pode mais trabalhar por motivo de saúde.</p>
+            <form class="flex flex-column gap-1">
+              <label for="condicao-saude">1. Qual é sua condição de saúde atual?</label>
+              <input type="text" id="condicao-saude" required>
+              <label for="tempo-afastamento">
+                2. Você está afastado do trabalho? Desde quando?
+              </label>
+              <input type="text" id="tempo-afastamento" required>
+              <label for="pericia">
+                3. Já passou por perícia médica do INSS?
+              </label>
+              <input type="text" id="pericia">
+              <button type="submit">
+                Fale Comigo
+              </button>
+            </form>
           </div>
         </div>
         <div class="elemento card-4">
@@ -244,7 +259,22 @@
             <label for="btn4" class="card">4. Auxílio-doença (Benefício por Incapacidade Temporária)</label>
           </div>
           <div class="secao secao4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Para quem está temporariamente incapaz de trabalhar.</p>
+            <form class="flex flex-column gap-1">
+              <label for="condicao-saude-2">1. Qual é o problema de saúde que te impede de trabalhar?</label>
+              <input type="text" id="condicao-saude-2" required>
+              <label for="atestado-medico">
+                2. Está com atestado médico? Quantos dias de afastamento?
+              </label>
+              <input type="text" id="atestado-medico" required>
+              <label for="condicao-emprego">
+                3. É empregado com carteira assinada ou autônomo?
+              </label>
+              <input type="text" id="condicao-emprego">
+              <button type="submit">
+                Fale Comigo
+              </button>
+            </form>
           </div>
         </div>
         <div class="elemento card-5">
@@ -253,7 +283,22 @@
             <label for="btn5" class="card">5. Pensão por Morte</label>
           </div>
           <div class="secao secao5">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Destinado aos dependentes de segurado falecido.</p>
+            <form class="flex flex-column gap-1">
+              <label for="vinculo">1. Qual era o vínculo com o falecido (ex: cônjuge, filho, pai/mãe)?</label>
+              <input type="text" id="vinculo" required>
+              <label for="contribuicao">
+                2. Ele(a) contribuía para o INSS?
+              </label>
+              <input type="text" id="contribuicao" required>
+              <label for="data-falecimento">
+                3. Quando ocorreu o falecimento?
+              </label>
+              <input type="text" id="data-falecimento">
+              <button type="submit">
+                Fale Comigo
+              </button>
+            </form>
           </div>
         </div>
         <div class="elemento card-6">
@@ -262,7 +307,26 @@
             <label for="btn6" class="card">6. BPC/LOAS (Benefício de Prestação Continuada)</label>
           </div>
           <div class="secao secao6">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Para idosos ou pessoas com deficiência de baixa renda.</p>
+            <form class="flex flex-column gap-1">
+              <label for="idoso">1. É idoso(a) com mais de 65 anos ou pessoa com deficiência?</label>
+              <input type="text" id="idoso" required>
+              <label for="renda-familiar">
+                2. A renda por pessoa da família é inferior a 1/4 do salário mínimo?
+              </label>
+              <input type="text" id="renda-familiar" required>
+              <label for="beneficio-negado">
+                3. Já recebeu algum benefício previdenciário antes?
+              </label>
+              <select id="beneficio-negado" required>
+                <option value="selecione">Selecione...</option>
+                <option value="Sim">Sim</option>
+                <option value="">Não</option>
+              </select>
+              <button type="submit">
+                Fale Comigo
+              </button>
+            </form>
           </div>
         </div>
         <div class="elemento card-7">
@@ -271,7 +335,30 @@
             <label for="btn7" class="card">7. Auxílio-Reclusão</label>
           </div>
           <div class="secao secao7">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Para dependentes de segurado do INSS que está preso.</p>
+            <form class="flex flex-column gap-1">
+              <label for="grau-parentesco">1. Qual seu grau de parentesco com o(a) preso(a)?</label>
+              <input type="text" id="grau-parentesco" required>
+              <label for="contribuicao-preso">
+                2. O(a) segurado(a) estava contribuindo com o INSS antes da prisão?
+              </label>
+              <input type="text" id="contribuicao-preso" required>
+              <label for="data-prisao">
+                3. Quando ocorreu a prisão?
+              </label>
+              <input type="text" id="data-prisao">
+              <label for="fontes-renda">
+                4. A família possui outras fontes de renda?
+              </label>
+              <select id="fontes-renda" required>
+                <option value="selecione">Selecione...</option>
+                <option value="Sim">Sim</option>
+                <option value="">Não</option>
+              </select>
+              <button type="submit">
+                Fale Comigo
+              </button>
+            </form>
           </div>
         </div>
         <div class="elemento card-8">
@@ -280,7 +367,31 @@
             <label for="btn8" class="card">9. Salário-Maternidade</label>
           </div>
           <div class="secao secao8">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Para quem se afasta do trabalho por motivo de parto, adoção ou aborto não criminoso.</p>
+            <form class="flex flex-column gap-1">
+              <label for="data-parto">1.	Qual foi a data do parto, adoção ou aborto não criminoso?</label>
+              <input type="text" id="data-parto" required>
+              <label for="contribuicao-antes-afastamento">
+                2.	Você estava contribuindo para o INSS antes do afastamento?
+              </label>
+              <input type="text" id="contribuicao-antes-afastamento" required>
+              <label for="registro">
+                3.	Você é empregada registrada, autônoma, MEI ou desempregada no momento?
+              </label>
+              <input type="text" id="registro">
+              <label for="recebeu-beneficio">
+                4.	Já recebeu esse benefício alguma vez?
+              </label>
+              <select id="recebeu-beneficio" required>
+                <option value="selecione">Selecione...</option>
+                <option value="Sim">Sim</option>
+                <option value="">Não</option>
+              </select>
+              <button type="submit">
+                Fale Comigo
+              </button>
+            </form>
+
           </div>
         </div>
       </article>
