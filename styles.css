@@ -199,7 +199,7 @@ main {
     }
 
     .textAposentadoria {
-      padding: 3rem;
+      padding: 1rem;
       grid-column: 2/3;
       border-radius: 2rem;
       background-color: #f8f7f891;
@@ -236,99 +236,118 @@ main {
     }
   }
 
-  #area-atuacao {
-    /* border: 2px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-flow: row wrap;
-    width: 1000px;
-    margin: 3rem auto;
+  & #beneficios {
+    color: #dcc3a9;
+    & h2 {
+      font-weight: bold;
+      margin-block: 4rem;
+      font-size: 2rem;
+      color: #0a3150;
+    }
+    & #area-atuacao {
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+
+      & .elemento {
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 0.6rem;
+
+        #btn1,
+        #btn2,
+        #btn3,
+        #btn4,
+        #btn5,
+        #btn6,
+        #btn7,
+        #btn8 {
+          visibility: hidden;
+          display: none;
+        }
+
+        #btn1:checked~.secao1,
+        #btn2:checked~.secao2,
+        #btn3:checked~.secao3,
+        #btn4:checked~.secao4,
+        #btn5:checked~.secao5,
+        #btn6:checked~.secao6,
+        #btn7:checked~.secao7,
+        #btn8:checked~.secao8 {
+          display: block;
+          margin-top: 1.5rem;
+        }
+
+        #btn1:checked,
+        #btn2:checked,
+        #btn3:checked,
+        #btn4:checked,
+        #btn5:checked,
+        #btn6:checked,
+        #btn7:checked,
+        #btn8:checked {
+          display: block;
+        }
+
+        .cards {
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .card {
+          display: flex;
+          user-select: none;
+          padding: 1rem;
+          box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.34);
+          border-radius: 5px;
+          background-color: #0a3150;
+          transition: 0.6s;
+        }
+
+        .card:hover {
+          cursor: pointer;
+          transform: scale(1.02)
+        }
+
+
+
+        .secao {
+          user-select: none;
+          background-color: #0a3150;
+          padding: 1rem;
+          border-radius: 5px;
+          display: none;
+          box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.34);
+
+          & p {
+            margin-bottom: 1rem;
+          }
+        }
+
+        form {
+          flex-direction: column;
+        }
+      }
+    }
+
   }
 
-  .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-  }
 
-  .elemento {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 0.6rem;
-    /* border: 2px solid black; */
-  }
 
-  .flex-end {
+
+
+
+
+
+  /* .flex-end {
     justify-content: flex-end;
-  }
+  } */
 
-  .card {
-    user-select: none;
-    box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.34);
-    border-radius: 5px;
-    text-align: center;
-    font-size: var(--px-lg);
-    width: 300px;
-    height: 200px;
-    background-color: var(--font-secondary-color);
-    transition: 0.6s;
-  }
 
-  .card:hover {
-    cursor: pointer;
-    transform: scale(1.07)
-  }
-
-  #btn1,
-  #btn2,
-  #btn3,
-  #btn4,
-  #btn5,
-  #btn6,
-  #btn7,
-  #btn8 {
-    visibility: hidden;
-    display: none;
-  }
-
-  #btn1:checked~.secao1,
-  #btn2:checked~.secao2,
-  #btn3:checked~.secao3,
-  #btn4:checked~.secao4,
-  #btn5:checked~.secao5,
-  #btn6:checked~.secao6,
-  #btn7:checked~.secao7,
-  #btn8:checked~.secao8 {
-    display: block
-  }
-
-  #btn1:checked,
-  #btn2:checked,
-  #btn3:checked,
-  #btn4:checked,
-  #btn5:checked,
-  #btn6:checked,
-  #btn7:checked,
-  #btn8:checked {
-    display: block;
-  }
-
-  .secao {
-    user-select: none;
-    width: 300px;
-    background-color: var(--font-secondary-color);
-    padding: 1rem;
-    border-radius: 5px;
-    display: none;
-    box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.34);
-  }
 }
 
 
@@ -423,6 +442,45 @@ main {
       & .planning {
         & .box-aposentadoria {
           grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+
+    & #beneficios {
+
+      & #area-atuacao {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        & .card-2, & .card-4, & .card-6,
+        & .card-8 {
+          grid-column: 2/3;
+        }
+        & .card-2 {
+          grid-row: 2/3;
+        }
+        & .card-3 {
+          grid-row: 3/4;
+        }
+        & .card-4 {
+          grid-row: 4/5;
+        }
+        & .card-5 {
+          grid-row: 5/6;
+        }
+        & .card-6 {
+          grid-row: 6/7;
+        }
+        & .card-7 {
+          grid-row: 7/8 ;
+        }
+        & .card-8 {
+          grid-row: 8/9 ;
+        }
+        & .elemento {
+          & .card {
+
+          }
         }
       }
     }

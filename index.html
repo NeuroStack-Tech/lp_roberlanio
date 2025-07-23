@@ -25,7 +25,7 @@
           <li>
             <a href="#about">Sobre Mim</a>
           </li>
-          <li>
+          <li class="desktop-only">
             <a href="#planning">Planejamento</a>
           </li>
         </ul>
@@ -174,75 +174,110 @@
     </section>
 
     <section id="beneficios">
-      <article id="area-atuacao">
-        <div class="elemento flex-end">
+      <h2>Benefícios</h2>
+      <article id="area-atuacao" class="container grid">
+        <div class="elemento">
           <input id="btn1" type="checkbox">
           <div class="cards">
             <label for="btn1" class="card">1. Aposentadoria por Idade</label>
           </div>
           <div class="secao secao1">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-        <div class="elemento flex-start">
-          <input id="btn2" type="checkbox">
-          <div class="cards">
-            <label for="btn2" class="card">1. Aposentadoria por Idade</label>
-          </div>
-          <div class="secao secao2">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Você pode ter direito se... tem idade mínima e tempo de contribuição.
+            </p>
+            <form class="flex flex-column gap-1">
+              <label for="idade">1. Qual sua idade atual?</label>
+              <input type="text" id="idade" required>
+              <label for="tempo-contribuicao">
+                2. Você já contribuiu com o INSS? Por quanto tempo (aproximadamente)?
+              </label>
+              <input type="text" id="tempo-contribuicao" required>
+              <label for="opcao">
+                3. Já recebeu algum benefício previdenciário antes?
+              </label>
+              <select id="opcao" required>
+                <option value=""></option>
+                <option value="Sim">Sim</option>
+                <option value="">Não</option>
+              </select>
+              <button type="submit">
+                Fale Comigo
+              </button>
+            </form>
           </div>
         </div>
 
-        <div class="elemento flex-end">
+        <div class="elemento card-2">
+          <input id="btn2" type="checkbox">
+          <div class="cards">
+            <label for="btn2" class="card">2. Aposentadoria por Tempo de Contribuição (Regras de Transição)</label>
+          </div>
+          <div class="secao secao2">
+            <p>Válido para quem já contribuía antes da reforma.</p>
+            <form class="flex flex-column gap-1">
+              <label for="inicio-contribuicao">1. Quando você começou a contribuir para o INSS?</label>
+              <input type="text" id="inicio-contribuicao" required>
+              <label for="pausa-contribuicao">
+                2. Você parou de contribuir em algum momento? Por quanto tempo?
+              </label>
+              <input type="text" id="pausa-contribuicao" required>
+              <label for="idade-2">
+                3. Qual sua idade atual?
+              </label>
+              <input type="text" id="idade-2">
+              <button type="submit">
+                Fale Comigo
+              </button>
+          </div>
+        </div>
+        <div class="elemento card-3">
           <input id="btn3" type="checkbox">
           <div class="cards">
-            <label for="btn3" class="card">1. Aposentadoria por Idade</label>
+            <label for="btn3" class="card">3. Aposentadoria por Invalidez</label>
           </div>
           <div class="secao secao3">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-        <div class="elemento flex-start">
+        <div class="elemento card-4">
           <input id="btn4" type="checkbox">
           <div class="cards">
-            <label for="btn4" class="card">1. Aposentadoria por Idade</label>
+            <label for="btn4" class="card">4. Auxílio-doença (Benefício por Incapacidade Temporária)</label>
           </div>
           <div class="secao secao4">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-        <div class="elemento flex-end">
+        <div class="elemento card-5">
           <input id="btn5" type="checkbox">
           <div class="cards">
-            <label for="btn5" class="card">1. Aposentadoria por Idade</label>
+            <label for="btn5" class="card">5. Pensão por Morte</label>
           </div>
           <div class="secao secao5">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-        <div class="elemento flex-start">
+        <div class="elemento card-6">
           <input id="btn6" type="checkbox">
           <div class="cards">
-            <label for="btn6" class="card">1. Aposentadoria por Idade</label>
+            <label for="btn6" class="card">6. BPC/LOAS (Benefício de Prestação Continuada)</label>
           </div>
           <div class="secao secao6">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-        <div class="elemento flex-end">
+        <div class="elemento card-7">
           <input id="btn7" type="checkbox">
           <div class="cards">
-            <label for="btn7" class="card">1. Aposentadoria por Idade</label>
+            <label for="btn7" class="card">7. Auxílio-Reclusão</label>
           </div>
           <div class="secao secao7">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-        <div class="elemento flex-start">
+        <div class="elemento card-8">
           <input id="btn8" type="checkbox">
           <div class="cards">
-            <label for="btn8" class="card">1. Aposentadoria por Idade</label>
+            <label for="btn8" class="card">9. Salário-Maternidade</label>
           </div>
           <div class="secao secao8">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
