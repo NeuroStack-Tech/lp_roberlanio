@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <script src="https://kit.fontawesome.com/98d7cb019f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -34,15 +35,16 @@
   </header>
 
   <section class="init py-base flex">
-    <div class="container logo flex">
+    <div class="container logo flex flex-column gap-1">
       <img src="./images/image-logo.jpg" alt="Logomarca Roberlânio" />
+      <h2>Especialista em direito previdenciário</h2>
     </div>
   </section>
 
   <main>
     <section id="about" class="py-base">
       <div class="about container">
-        <h2>Sobre Mim</h2>
+        <h2 class="text-center">Sobre Mim</h2>
 
         <div class="about grid flex-column gap-2">
           <figure>
@@ -173,9 +175,9 @@
 
     </section>
 
-    <section id="beneficios">
-      <h2>Benefícios</h2>
-      <article id="area-atuacao" class="container grid">
+    <section id="beneficios" class="container py-base">
+      <h2 class="text-center">Benefícios</h2>
+      <article id="area-atuacao" class="grid">
         <div class="elemento">
           <input id="btn1" type="checkbox">
           <div class="cards">
@@ -396,23 +398,40 @@
         </div>
       </article>
     </section>
+
+    <section id="contato">
+      <div class="container py-base">
+        <h2 class="text-center">Contato</h2>
+        <fieldset>
+          <form class="flex flex-column gap-1">
+            <label for="name">Nome:</label>
+            <input type="text" id="name">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone">
+            <label for="motivo-contato">Motivo do Contato:</label>
+            <textarea name="motivo-contato" id="motivo-contato"></textarea>
+            <button type="submit">Fale Comigo</button>
+          </form>
+        </fieldset>
+      </div>
+    </section>
+
   </main>
 
 
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <p class="rgProfissional">REGISTRO PROFISSIONAL</p>
     <h3 class="OAB">OAB/PB 33.022</h3>
 
     <section class="rodape">
-      <ul class="marca">
-        <li class="logo"><img src="./images/Logomarca.png" alt="">
-          <h3>
-            RMC
-          </h3>
-        </li>
-        <li class="slogan">Especialista em Direito Previdenciário </li>
-      </ul>
+      <div class="marca">
+        <img src="./images/header-logo.jpg" alt="">
+          <h3 class="slogan">Especialista em Direito Previdenciário </h3>
+      </div>
+
 
       <ul class="contatos">
         <h3>Contato Rápido</h3>
@@ -423,23 +442,22 @@
 
       <ul class="socialLinks">
         <h3>Siga-me</h3>
-        <li class="whatsapp">whatsapp</li>
-        <li class="facebook">facebook</li>
-        <li class="instagram"> instagram</li>
-        <li class="linkedin">linkedin</li>
-        <li></li>
+        <li class="whatsapp"><a href="#"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
+        <li class="facebook"><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+        <li class="instagram"><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+        <li class="linkedin"><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
       </ul>
     </section>
+    <section class="consideracoesFinais">
+      <h4>
+        2025 Roberlânio Moura Cândido Advocacia. Todos os direitos foram reservados.
+      </h4>
+      <h4>
+        Desenvolvido por <a href="https://www.instagram.com/neurostack_tech?igsh=MTN5NnJwbGNmcnFjOQ=="
+          target="_blank">NeuroStack</a>
+      </h4>
+    </section>
   </footer>
-  <footer class="consideracoesFinais">
-    <h4>
-      2025 Roberlânio Moura Cândido Advocacia. Todos os direitos foram reservados.
-    </h4>
-    <h4>
-      Desenvolvido por <a href="https://www.instagram.com/neurostack_tech?igsh=MTN5NnJwbGNmcnFjOQ=="
-        target="_blank">NeuroStack</a>
-    </h4>
-  </footer> -->
 </body>
 <script src="script.js"></script>
 

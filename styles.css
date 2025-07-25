@@ -59,6 +59,10 @@ html {
   display: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .container {
   --max-width: 375px;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
@@ -119,6 +123,11 @@ header {
   & .logo {
     justify-content: center;
     align-items: center;
+
+    & h2 {
+      font-size: 2rem;
+      font-style: italic;
+    }
   }
 
   & img {
@@ -136,7 +145,6 @@ main {
       color: inherit;
       font-weight: bold;
       font-size: 2rem;
-      text-align: center;
     }
 
     & .about {
@@ -237,13 +245,16 @@ main {
   }
 
   & #beneficios {
+    margin-bottom: 4rem;
     color: #dcc3a9;
+
     & h2 {
       font-weight: bold;
       margin-block: 4rem;
       font-size: 2rem;
       color: #0a3150;
     }
+
     & #area-atuacao {
       justify-content: center;
       align-items: center;
@@ -306,6 +317,7 @@ main {
           border-radius: 5px;
           background-color: #0a3150;
           transition: 0.6s;
+          font-weight: bold;
         }
 
         .card:hover {
@@ -325,6 +337,7 @@ main {
 
           & p {
             margin-bottom: 1rem;
+            font-weight: bold;
           }
         }
 
@@ -336,17 +349,24 @@ main {
 
   }
 
+  & #contato {
+    background-color: #dcc3a940;
+    padding-block: 4rem;
 
+    & h2 {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 4rem;
+    }
 
+    & fieldset {
+      padding: 1.5rem;
+      border-radius: .5rem;
+      width: 50%;
+      margin-inline: auto;
+    }
 
-
-
-
-
-  /* .flex-end {
-    justify-content: flex-end;
-  } */
-
+  }
 
 }
 
@@ -390,12 +410,16 @@ main {
       width: 40rem;
     }
 
+    & h2 {
+      font-size: 1.2rem;
+    }
+
   }
 
   main {
     & #about {
       & h2 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-block: 3rem;
       }
 
@@ -447,41 +471,59 @@ main {
     }
 
     & #beneficios {
+      & h2 {
+        font-size: 3rem;
+      }
 
       & #area-atuacao {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
 
-        & .card-2, & .card-4, & .card-6,
+        & .card-2,
+        & .card-4,
+        & .card-6,
         & .card-8 {
           grid-column: 2/3;
         }
+
         & .card-2 {
           grid-row: 2/3;
         }
+
         & .card-3 {
           grid-row: 3/4;
         }
+
         & .card-4 {
           grid-row: 4/5;
         }
+
         & .card-5 {
           grid-row: 5/6;
         }
+
         & .card-6 {
           grid-row: 6/7;
         }
-        & .card-7 {
-          grid-row: 7/8 ;
-        }
-        & .card-8 {
-          grid-row: 8/9 ;
-        }
-        & .elemento {
-          & .card {
 
-          }
+        & .card-7 {
+          grid-row: 7/8;
         }
+
+        & .card-8 {
+          grid-row: 8/9;
+        }
+
+        & .elemento {
+          & .card {}
+        }
+      }
+    }
+
+    & #contato {
+
+      & h2 {
+        font-size: 3rem;
       }
     }
   }
@@ -490,8 +532,6 @@ main {
 
 
 .footer {
-  margin-top: 20rem;
-  /*enquanto nao adiciona o formulario usei pra ter noçao de espaço*/
   background-color: #0a3150;
 
   & .rgProfissional {
@@ -518,23 +558,16 @@ main {
     list-style: none;
     margin: 0.5rem auto;
 
-    & .logo {
-      display: flex;
 
-      & h3 {
-        color: #f8f7f8;
-        text-align: start;
-        font-size: 2.9rem;
-        font-weight: 700;
-      }
+    & h3 {
+      color: #f8f7f8;
+      text-align: start;
+      font-size: 2.9rem;
+      font-weight: 700;
+    }
 
-      img {
-        margin-top: 0.7rem;
-        margin-right: 0.5rem;
-        margin-left: 2rem;
-        width: 3rem;
-        height: 3rem;
-      }
+    & img {
+      width: 20rem;
     }
 
     & .slogan {
