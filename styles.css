@@ -227,8 +227,10 @@ main {
 
     .listaPlanejamentoAposentadoria li {
       max-width: 35rem;
-      box-shadow: -14px 20px 10px 0px rgba(0, 0, 0, 0.5);
-      font-size: 0.8rem;
+      box-shadow: -8px 8px 10px 0px rgba(0, 0, 0, 0.5);
+      /* box-shadow: -14px 20px 10px 0px rgba(0, 0, 0, 0.5); */
+      font-size: 1.2rem;
+      /* font-size: 0.8rem; */
       list-style: decimal;
       color: #0a3150;
       border-radius: 1rem;
@@ -330,7 +332,7 @@ main {
         .secao {
           user-select: none;
           background-color: #0a3150;
-          padding: 1rem;
+          padding: 1.5rem;
           border-radius: 5px;
           display: none;
           box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.34);
@@ -343,6 +345,34 @@ main {
 
         form {
           flex-direction: column;
+
+          & input {
+            padding: 0.5rem;
+            border-radius: 0.4rem;
+            border: 1px solid var(--bg-color);
+          }
+
+          & select {
+            padding: 0.5rem;
+            border-radius: 0.4rem;
+            color: var(--bg-color);
+          }
+
+          & button {
+            margin-top: 0.3rem;
+            padding: 0.7rem;
+            background-color: var(--font-secondary-color);
+            color: var(--bg-color);
+            font-size: 22px;
+            border-radius: 0.4rem;
+            border: none;
+            transition: 0.6s;
+          }
+
+          & button:hover {
+            font-size: 24px;
+            transform: scale(1.03);
+          }
         }
       }
     }
@@ -352,6 +382,7 @@ main {
   & #contato {
     background-color: #dcc3a940;
     padding-block: 4rem;
+    user-select: none;
 
     & h2 {
       font-weight: bold;
@@ -364,8 +395,38 @@ main {
       border-radius: .5rem;
       width: 50%;
       margin-inline: auto;
+      border: 1px solid var(--font-color);
+      box-shadow: 0 0 2rem #949494ce;
     }
 
+    & input {
+      padding: 0.7rem;
+      border-radius: 0.4rem;
+      border: 1px solid var(--bg-color);
+    }
+
+    & label {
+      font-size: 18px;
+    }
+
+    & button {
+      padding: 0.7rem;
+      background-color: var(--bg-color);
+      color: var(--font-secondary-color);
+      font-size: 22px;
+      border-radius: 0.4rem;
+      border: none;
+      transition: 0.6s;
+    }
+
+    & textarea {
+      height: 7rem;
+    }
+
+    & button:hover {
+      font-size: 24px;
+      transform: scale(1.03);
+    }
   }
 
 }
