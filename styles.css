@@ -575,9 +575,9 @@ main {
           grid-row: 8/9;
         }
 
-        & .elemento {
+        /* & .elemento {
           & .card {}
-        }
+        } */
       }
     }
 
