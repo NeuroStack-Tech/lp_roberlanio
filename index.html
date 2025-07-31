@@ -176,224 +176,363 @@
     </section>
 
     <section id="beneficios" class="container py-base">
-      <h2 class="text-center">Benefícios</h2>
-      <article id="area-atuacao" class="grid">
+      <h2 class="text-center">Benefícios Previdenciários</h2>
+      <article id="area-atuacao">
         <div class="elemento">
           <input id="btn1" type="checkbox">
           <div class="cards">
-            <label for="btn1" class="card">1. Aposentadoria por Idade</label>
+            <label for="btn1" class="card">1. Aposentadoria por Idade <i class="fa-solid fa-angle-down"></i></label>
           </div>
           <div class="secao secao1">
-            <p>Você pode ter direito se... tem idade mínima e tempo de contribuição.
-            </p>
-            <form class="flex flex-column gap-1">
-              <label for="idade">1. Qual sua idade atual?</label>
-              <input type="text" id="idade" required>
-              <label for="tempo-contribuicao">
-                2. Você já contribuiu com o INSS? Por quanto tempo (aproximadamente)?
-              </label>
-              <input type="text" id="tempo-contribuicao" required>
-              <label for="opcao">
-                3. Já recebeu algum benefício previdenciário antes?
-              </label>
-              <select id="opcao" required>
-                <option value="selecione">Selecione...</option>
-                <option value="Sim">Sim</option>
-                <option value="">Não</option>
-              </select>
-              <button type="submit">
-                Fale Comigo
-              </button>
-            </form>
+            <div class="content grid">
+              <div class="text-content flex flex-column gap-1">
+                <h3>
+                  Aposentadoria por Idade: Chegou sua hora de descansar com dignidade!
+                </h3>
+                <p>
+                  Se você já atingiu a idade mínima (62 anos para mulheres e 65 para homens) e tem tempo mínimo de
+                  contribuição, você pode conquistar o direito de se aposentar!
+                  Nós cuidamos de todo o processo para você, garantindo que nenhum direito seu seja ignorado e que você
+                  receba o melhor valor possível.
+
+                </p>
+                <p class="fw-bold">
+                  Não perca tempo nem dinheiro enfrentando a burocracia sozinho. Conte conosco!
+                </p>
+              </div>
+              <form class="flex flex-column gap-1">
+                <p class="fw-bold">Você pode ter direito se... tem idade mínima e tempo de contribuição.
+                </p>
+                <label for="idade">1. Qual sua idade atual?</label>
+                <input type="text" id="idade" required>
+                <label for="tempo-contribuicao">
+                  2. Você já contribuiu com o INSS? Por quanto tempo (aproximadamente)?
+                </label>
+                <input type="text" id="tempo-contribuicao" required>
+                <label for="opcao">
+                  3. Já recebeu algum benefício previdenciário antes?
+                </label>
+                <select id="opcao" required>
+                  <option value="selecione">Selecione...</option>
+                  <option value="Sim">Sim</option>
+                  <option value="">Não</option>
+                </select>
+                <button type="submit">
+                  Fale Comigo
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="elemento card-2">
+        <div class="elemento">
           <input id="btn2" type="checkbox">
           <div class="cards">
-            <label for="btn2" class="card">2. Aposentadoria por Tempo de Contribuição (Regras de Transição)</label>
+            <label for="btn2" class="card">2. Aposentadoria por Tempo de Contribuição (Regras de Transição)<i
+                class="fa-solid fa-angle-down"></i></label>
           </div>
           <div class="secao secao2">
-            <p>Válido para quem já contribuía antes da reforma.</p>
-            <form class="flex flex-column gap-1">
-              <label for="inicio-contribuicao">1. Quando você começou a contribuir para o INSS?</label>
-              <input type="text" id="inicio-contribuicao" required>
-              <label for="pausa-contribuicao">
-                2. Você parou de contribuir em algum momento? Por quanto tempo?
-              </label>
-              <input type="text" id="pausa-contribuicao" required>
-              <label for="idade-2">
-                3. Qual sua idade atual?
-              </label>
-              <input type="text" id="idade-2">
-              <button type="submit">
-                Fale Comigo
-              </button>
-            </form>
+            <div class="content grid">
+              <div class="text-content flex flex-column gap-1">
+                <h3>
+                  Aposentadoria por Tempo de Contribuição (Regras de Transição): O momento certo para agir é agora!
+                </h3>
+                <p>
+                  Com a Reforma da Previdência, as regras mudaram — mas ainda existem caminhos vantajosos para quem já
+                  estava contribuindo!
+                  As regras de transição podem ser confusas, mas com nossa ajuda, você entende qual delas oferece
+                  <strong>
+                    o melhor cenário para você.
+                  </strong>
+                </p>
+                <p class="fw-bold">
+                  Antecipe sua aposentadoria, evite erros e maximize seu benefício com um especialista ao seu lado.
+                </p>
+              </div>
+              <form class="flex flex-column gap-1">
+                <p class="fw-bold">Válido para quem já contribuía antes da reforma.</p>
+                <label for="inicio-contribuicao">1. Quando você começou a contribuir para o INSS?</label>
+                <input type="text" id="inicio-contribuicao" required>
+                <label for="pausa-contribuicao">
+                  2. Você parou de contribuir em algum momento? Por quanto tempo?
+                </label>
+                <input type="text" id="pausa-contribuicao" required>
+                <label for="idade-2">
+                  3. Qual sua idade atual?
+                </label>
+                <input type="text" id="idade-2">
+                <button type="submit">
+                  Fale Comigo
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="elemento card-3">
+        <div class="elemento">
           <input id="btn3" type="checkbox">
           <div class="cards">
-            <label for="btn3" class="card">3. Aposentadoria por Invalidez</label>
+            <label for="btn3" class="card">3. Aposentadoria por Invalidez <i class="fa-solid fa-angle-down"></i></label>
           </div>
           <div class="secao secao3">
-            <p>Para quem não pode mais trabalhar por motivo de saúde.</p>
-            <form class="flex flex-column gap-1">
-              <label for="condicao-saude">1. Qual é sua condição de saúde atual?</label>
-              <input type="text" id="condicao-saude" required>
-              <label for="tempo-afastamento">
-                2. Você está afastado do trabalho? Desde quando?
-              </label>
-              <input type="text" id="tempo-afastamento" required>
-              <label for="pericia">
-                3. Já passou por perícia médica do INSS?
-              </label>
-              <input type="text" id="pericia">
-              <button type="submit">
-                Fale Comigo
-              </button>
-            </form>
+            <div class="content grid">
+              <div class="text-content flex flex-column gap-1">
+                <h3>
+                  Aposentadoria por Invalidez: Apoio completo em um momento difícil
+                </h3>
+                <p>
+                  Se você está permanentemente incapacitado para o trabalho, tem direito à <strong>aposentadoria por
+                    invalidez.</strong>
+                  Esse processo exige perícias, documentos e, muitas vezes,<strong>resistência por parte do
+                    INSS.</strong>
+                  Nós cuidamos de tudo para que você receba o benefício de forma rápida, justa e sem dores de cabeça.
+                </p>
+                <p class="fw-bold">
+                  Antecipe sua aposentadoria, evite erros e maximize seu benefício com um especialista ao seu lado.
+                </p>
+              </div>
+              <form class="flex flex-column gap-1">
+                <p class="fw-bold">Para quem não pode mais trabalhar por motivo de saúde.</p>
+                <label for="condicao-saude">1. Qual é sua condição de saúde atual?</label>
+                <input type="text" id="condicao-saude" required>
+                <label for="tempo-afastamento">
+                  2. Você está afastado do trabalho? Desde quando?
+                </label>
+                <input type="text" id="tempo-afastamento" required>
+                <label for="pericia">
+                  3. Já passou por perícia médica do INSS?
+                </label>
+                <input type="text" id="pericia">
+                <button type="submit">
+                  Fale Comigo
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="elemento card-4">
+        <div class="elemento">
           <input id="btn4" type="checkbox">
           <div class="cards">
-            <label for="btn4" class="card">4. Auxílio-doença (Benefício por Incapacidade Temporária)</label>
+            <label for="btn4" class="card">4. Auxílio-doença (Benefício por Incapacidade Temporária)<i
+                class="fa-solid fa-angle-down"></i></label>
           </div>
           <div class="secao secao4">
-            <p>Para quem está temporariamente incapaz de trabalhar.</p>
-            <form class="flex flex-column gap-1">
-              <label for="condicao-saude-2">1. Qual é o problema de saúde que te impede de trabalhar?</label>
-              <input type="text" id="condicao-saude-2" required>
-              <label for="atestado-medico">
-                2. Está com atestado médico? Quantos dias de afastamento?
-              </label>
-              <input type="text" id="atestado-medico" required>
-              <label for="condicao-emprego">
-                3. É empregado com carteira assinada ou autônomo?
-              </label>
-              <input type="text" id="condicao-emprego">
-              <button type="submit">
-                Fale Comigo
-              </button>
-            </form>
+            <div class="content grid">
+              <div class="text-content flex flex-column gap-1">
+                <h3>
+                  Auxílio-doença (Incapacidade Temporária): Quando a saúde pede pausa, seus direitos devem ser
+                  garantidos
+                </h3>
+                <p>
+                  Você ficou doente ou sofreu um acidente e não pode trabalhar? O <strong>auxílio-doença</strong> é um
+                  direito seu!
+                  Avaliamos seu caso, preparamos toda a documentação e <strong>acompanhamos a perícia médica</strong>
+                  para garantir que
+                  você receba o benefício o quanto antes.
+                </p>
+                <p class="fw-bold">
+                  Cada dia conta. Não espere o INSS negar seus direitos — antecipe-se com a nossa ajuda!
+                </p>
+              </div>
+              <form class="flex flex-column gap-1">
+                <p class="fw-bold">Para quem está temporariamente incapaz de trabalhar.</p>
+                <label for="condicao-saude-2">1. Qual é o problema de saúde que te impede de trabalhar?</label>
+                <input type="text" id="condicao-saude-2" required>
+                <label for="atestado-medico">
+                  2. Está com atestado médico? Quantos dias de afastamento?
+                </label>
+                <input type="text" id="atestado-medico" required>
+                <label for="condicao-emprego">
+                  3. É empregado com carteira assinada ou autônomo?
+                </label>
+                <input type="text" id="condicao-emprego">
+                <button type="submit">
+                  Fale Comigo
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="elemento card-5">
+        <div class="elemento">
           <input id="btn5" type="checkbox">
           <div class="cards">
-            <label for="btn5" class="card">5. Pensão por Morte</label>
+            <label for="btn5" class="card">5. Pensão por Morte<i class="fa-solid fa-angle-down"></i></label>
           </div>
           <div class="secao secao5">
-            <p>Destinado aos dependentes de segurado falecido.</p>
-            <form class="flex flex-column gap-1">
-              <label for="vinculo">1. Qual era o vínculo com o falecido (ex: cônjuge, filho, pai/mãe)?</label>
-              <input type="text" id="vinculo" required>
-              <label for="contribuicao">
-                2. Ele(a) contribuía para o INSS?
-              </label>
-              <input type="text" id="contribuicao" required>
-              <label for="data-falecimento">
-                3. Quando ocorreu o falecimento?
-              </label>
-              <input type="text" id="data-falecimento">
-              <button type="submit">
-                Fale Comigo
-              </button>
-            </form>
+            <div class="content grid">
+              <div class="text-content flex flex-column gap-1">
+                <h3>
+                  Pensão por Morte: Amparo essencial para quem perdeu um ente querido
+                </h3>
+                <p>
+                  Em um momento tão delicado como a perda de um familiar, garantir a pensão por morte pode ser crucial
+                  para manter a estabilidade financeira da família.
+                  Nós oferecemos suporte completo, com empatia e agilidade, para que o benefício seja liberado com
+                  rapidez e segurança.
+                </p>
+                <p class="fw-bold">
+                  Cuidamos de toda a parte burocrática, para que você possa focar no que realmente importa: o seu luto e
+                  sua família.
+                </p>
+              </div>
+              <form class="flex flex-column gap-1">
+                <p class="fw-bold">Destinado aos dependentes de segurado falecido.</p>
+                <label for="vinculo">1. Qual era o vínculo com o falecido (ex: cônjuge, filho, pai/mãe)?</label>
+                <input type="text" id="vinculo" required>
+                <label for="contribuicao">
+                  2. Ele(a) contribuía para o INSS?
+                </label>
+                <input type="text" id="contribuicao" required>
+                <label for="data-falecimento">
+                  3. Quando ocorreu o falecimento?
+                </label>
+                <input type="text" id="data-falecimento">
+                <button type="submit">
+                  Fale Comigo
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="elemento card-6">
+        <div class="elemento">
           <input id="btn6" type="checkbox">
           <div class="cards">
-            <label for="btn6" class="card">6. BPC/LOAS (Benefício de Prestação Continuada)</label>
+            <label for="btn6" class="card">6. BPC/LOAS (Benefício de Prestação Continuada)<i
+                class="fa-solid fa-angle-down"></i></label>
           </div>
           <div class="secao secao6">
-            <p>Para idosos ou pessoas com deficiência de baixa renda.</p>
-            <form class="flex flex-column gap-1">
-              <label for="idoso">1. É idoso(a) com mais de 65 anos ou pessoa com deficiência?</label>
-              <input type="text" id="idoso" required>
-              <label for="renda-familiar">
-                2. A renda por pessoa da família é inferior a 1/4 do salário mínimo?
-              </label>
-              <input type="text" id="renda-familiar" required>
-              <label for="beneficio-negado">
-                3. Já recebeu algum benefício previdenciário antes?
-              </label>
-              <select id="beneficio-negado" required>
-                <option value="selecione">Selecione...</option>
-                <option value="Sim">Sim</option>
-                <option value="">Não</option>
-              </select>
-              <button type="submit">
-                Fale Comigo
-              </button>
-            </form>
+            <div class="content grid">
+              <div class="text-content flex flex-column gap-1">
+                <h3>
+                  BPC/LOAS (Benefício de Prestação Continuada): Dignidade garantida para idosos e pessoas com
+                  deficiência
+                </h3>
+                <p>
+                  Mesmo sem nunca ter contribuído com o INSS, é possível receber o <strong>BPC/LOAS</strong>, desde que
+                  atendidos os
+                  critérios de baixa renda.
+                  Nós avaliamos sua situação e cuidamos de todo o processo para que você tenha acesso a esse benefício
+                  com o respeito e a atenção que merece.
+
+                </p>
+                <p class="fw-bold">
+                  Não perca tempo com negativas injustas — nós estamos aqui para lutar por você!
+                </p>
+              </div>
+              <form class="flex flex-column gap-1">
+                <p class="fw-bold">Para idosos ou pessoas com deficiência de baixa renda.</p>
+                <label for="idoso">1. É idoso(a) com mais de 65 anos ou pessoa com deficiência?</label>
+                <input type="text" id="idoso" required>
+                <label for="renda-familiar">
+                  2. A renda por pessoa da família é inferior a 1/4 do salário mínimo?
+                </label>
+                <input type="text" id="renda-familiar" required>
+                <label for="beneficio-negado">
+                  3. Já recebeu algum benefício previdenciário antes?
+                </label>
+                <select id="beneficio-negado" required>
+                  <option value="selecione">Selecione...</option>
+                  <option value="Sim">Sim</option>
+                  <option value="">Não</option>
+                </select>
+                <button type="submit">
+                  Fale Comigo
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="elemento card-7">
+        <div class="elemento">
           <input id="btn7" type="checkbox">
           <div class="cards">
-            <label for="btn7" class="card">7. Auxílio-Reclusão</label>
+            <label for="btn7" class="card">7. Auxílio-Reclusão<i class="fa-solid fa-angle-down"></i></label>
           </div>
           <div class="secao secao7">
-            <p>Para dependentes de segurado do INSS que está preso.</p>
-            <form class="flex flex-column gap-1">
-              <label for="grau-parentesco">1. Qual seu grau de parentesco com o(a) preso(a)?</label>
-              <input type="text" id="grau-parentesco" required>
-              <label for="contribuicao-preso">
-                2. O(a) segurado(a) estava contribuindo com o INSS antes da prisão?
-              </label>
-              <input type="text" id="contribuicao-preso" required>
-              <label for="data-prisao">
-                3. Quando ocorreu a prisão?
-              </label>
-              <input type="text" id="data-prisao">
-              <label for="fontes-renda">
-                4. A família possui outras fontes de renda?
-              </label>
-              <select id="fontes-renda" required>
-                <option value="selecione">Selecione...</option>
-                <option value="Sim">Sim</option>
-                <option value="">Não</option>
-              </select>
-              <button type="submit">
-                Fale Comigo
-              </button>
-            </form>
+            <div class="content grid">
+              <div class="text-content flex flex-column gap-1">
+                <h3>
+                  Auxílio-Reclusão: Proteção financeira aos dependentes do segurado preso
+                </h3>
+                <p>
+                  O <strong>auxílio-reclusão</strong> é pouco conhecido, mas extremamente importante. Se o segurado de
+                  baixa renda foi preso, seus dependentes têm direito a um benefício mensal.
+                  Fazemos uma análise completa da documentação e acompanhamos o processo para garantir o pagamento.
+                </p>
+                <p class="fw-bold">
+                  Se você tem dúvidas, fale conosco. Esse direito pode estar mais perto do que você imagina!
+                </p>
+              </div>
+              <form class="flex flex-column gap-1">
+                <p class="fw-bold">Para dependentes de segurado do INSS que está preso.</p>
+                <label for="grau-parentesco">1. Qual seu grau de parentesco com o(a) preso(a)?</label>
+                <input type="text" id="grau-parentesco" required>
+                <label for="contribuicao-preso">
+                  2. O(a) segurado(a) estava contribuindo com o INSS antes da prisão?
+                </label>
+                <input type="text" id="contribuicao-preso" required>
+                <label for="data-prisao">
+                  3. Quando ocorreu a prisão?
+                </label>
+                <input type="text" id="data-prisao">
+                <label for="fontes-renda">
+                  4. A família possui outras fontes de renda?
+                </label>
+                <select id="fontes-renda" required>
+                  <option value="selecione">Selecione...</option>
+                  <option value="Sim">Sim</option>
+                  <option value="">Não</option>
+                </select>
+                <button type="submit">
+                  Fale Comigo
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="elemento card-8">
+        <div class="elemento">
           <input id="btn8" type="checkbox">
           <div class="cards">
-            <label for="btn8" class="card">9. Salário-Maternidade</label>
+            <label for="btn8" class="card">9. Salário-Maternidade<i class="fa-solid fa-angle-down"></i></label>
           </div>
           <div class="secao secao8">
-            <p>Para quem se afasta do trabalho por motivo de parto, adoção ou aborto não criminoso.</p>
-            <form class="flex flex-column gap-1">
-              <label for="data-parto">1.	Qual foi a data do parto, adoção ou aborto não criminoso?</label>
-              <input type="text" id="data-parto" required>
-              <label for="contribuicao-antes-afastamento">
-                2.	Você estava contribuindo para o INSS antes do afastamento?
-              </label>
-              <input type="text" id="contribuicao-antes-afastamento" required>
-              <label for="registro">
-                3.	Você é empregada registrada, autônoma, MEI ou desempregada no momento?
-              </label>
-              <input type="text" id="registro">
-              <label for="recebeu-beneficio">
-                4.	Já recebeu esse benefício alguma vez?
-              </label>
-              <select id="recebeu-beneficio" required>
-                <option value="selecione">Selecione...</option>
-                <option value="Sim">Sim</option>
-                <option value="">Não</option>
-              </select>
-              <button type="submit">
-                Fale Comigo
-              </button>
-            </form>
-
+            <div class="content grid">
+              <div class="text-content flex flex-column gap-1">
+                <h3>
+                  Salário-Maternidade: Mais do que um direito, um apoio para um momento único
+                </h3>
+                <p>
+                  Durante a gravidez, após o parto ou em casos de adoção, o <strong>salário-maternidade</strong> garante
+                  o suporte financeiro à segurada.
+                  Acompanhamos todo o processo para que esse benefício seja liberado no momento certo, sem atrasos ou
+                  dores de cabeça.
+                </p>
+                <p class="fw-bold">
+                  Você cuida do seu bebê, nós cuidamos dos seus direitos!
+                </p>
+              </div>
+              <form class="flex flex-column gap-1">
+                <p class="fw-bold">Para quem se afasta do trabalho por motivo de parto, adoção ou aborto não criminoso.</p>
+                <label for="data-parto">1. Qual foi a data do parto, adoção ou aborto não criminoso?</label>
+                <input type="text" id="data-parto" required>
+                <label for="contribuicao-antes-afastamento">
+                  2. Você estava contribuindo para o INSS antes do afastamento?
+                </label>
+                <input type="text" id="contribuicao-antes-afastamento" required>
+                <label for="registro">
+                  3. Você é empregada registrada, autônoma, MEI ou desempregada no momento?
+                </label>
+                <input type="text" id="registro">
+                <label for="recebeu-beneficio">
+                  4. Já recebeu esse benefício alguma vez?
+                </label>
+                <select id="recebeu-beneficio" required>
+                  <option value="selecione">Selecione...</option>
+                  <option value="Sim">Sim</option>
+                  <option value="">Não</option>
+                </select>
+                <button type="submit">
+                  Fale Comigo
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </article>
@@ -429,7 +568,7 @@
     <section class="rodape">
       <div class="marca">
         <img src="./images/header-logo.jpg" alt="">
-          <h3 class="slogan">Especialista em Direito Previdenciário </h3>
+        <h3 class="slogan">Especialista em Direito Previdenciário </h3>
       </div>
 
 
