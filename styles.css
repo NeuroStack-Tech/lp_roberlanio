@@ -33,6 +33,7 @@ body {
 
 html {
   color: var(--title-color);
+  scroll-behavior: smooth;
 }
 
 .grid {
@@ -61,6 +62,10 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.scroll-mt {
+  scroll-margin-top: 80px;
 }
 
 .container {
@@ -99,7 +104,7 @@ nav {
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #dcc3a9;
-  transition: background-color 0.3s ease-in-out; 
+  transition: background-color 0.3s ease-in-out;
 }
 
 nav.scrolled {
@@ -122,13 +127,13 @@ nav .navbar a:hover {
 }
 
 nav .navbar img {
-  width: 12rem;
+  width: 10rem;
 }
 
 nav .nav-list {
   list-style: none;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 nav .nav-list li a {
@@ -136,13 +141,13 @@ nav .nav-list li a {
 }
 
 .menu-toggler {
-  display: none; 
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
   padding: 10px;
   position: relative;
-  z-index: 1001; 
+  z-index: 1001;
 }
 
 .hamburger-icon {
@@ -190,10 +195,6 @@ nav .nav-list li a {
   top: 0;
 }
 
-
-
-
-
 .init {
   background-color: var(--bg-color);
   min-height: 88vh;
@@ -203,7 +204,7 @@ nav .nav-list li a {
     align-items: center;
 
     & h2 {
-      font-size: 2rem;
+      font-size: 1rem;
       font-style: italic;
     }
   }
@@ -510,7 +511,7 @@ main {
     & fieldset {
       padding: 1.5rem;
       border-radius: .5rem 1.8rem;
-      width: 50%;
+      width: 100%;
       margin-inline: auto;
       border: 1px solid var(--font-color);
       box-shadow: 0 0 2rem #949494ce;
@@ -556,22 +557,116 @@ main {
 
 }
 
+.footer {
+  background-color: #0a3150;
+
+  & .rgProfissional {
+    padding-top: 1.3rem;
+    text-align: center;
+  }
+
+  & .OAB {
+    color: #dcc3a9;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+.rodape {
+  padding-bottom: 1rem;
+  border-bottom: solid 1px rgb(31, 70, 103);
+  grid-auto-flow: row;
+  gap: 2rem;
+  justify-content: center;
+
+  & .title {
+    color: #dcc3a9;
+    font-size: 1.5rem;
+    font-weight: 700
+  }
+
+  & .marca {
+    list-style: none;
+
+    & h3 {
+      color: #f8f7f8;
+      text-align: start;
+      font-size: 2.9rem;
+      font-weight: 700;
+    }
+
+    & img {
+      width: 20rem;
+    }
+
+    & .slogan {
+      padding-top: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  & a {
+    color: #f8f7f8;
+    font-weight: 700;
+
+    &:hover {
+      color: #dcc3a9;
+    }
+
+    & i {
+      margin-right: .5rem;
+    }
+  }
+
+  & .contatos {
+    list-style: none;
+    gap: 1rem;
+
+    & li {
+      font-weight: 800;
+    }
+  }
+
+  & .socialLinks {
+    list-style: none;
+    gap: 1rem;
+  }
+}
+
+.consideracoesFinais {
+  padding: 1.7rem;
+  background-color: #0a3150;
+  margin: auto;
+  font-size: 0.6rem;
+
+  & h4 {
+    text-align: center;
+    color: rgb(42, 93, 135);
+
+    & a {
+      font-weight: 600;
+      color: rgb(42, 93, 135);
+      font-style: italic;
+      text-decoration: underline;
+    }
+  }
+}
+
 @media (width < 64em) {
   .container {
     --max-width: 64rem;
   }
 
-  /* .init {
-    min-height: 92vh;
-  } */
-  
-    nav .navbar .nav-list {
-    display: none; 
+
+  nav .navbar .nav-list {
+    display: none;
     padding-block: 1rem;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 0;
     background-color: var(--bg-color);
     border-top: 1px solid #dcc3a9;
@@ -581,8 +676,10 @@ main {
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
-  nav .navbar .nav-list.active { /* Classe para mostrar o menu */
-    display: flex; /* Mostra o menu */
+  nav .navbar .nav-list.active {
+    /* Classe para mostrar o menu */
+    display: flex;
+    /* Mostra o menu */
     opacity: 1;
     visibility: visible;
   }
@@ -597,10 +694,26 @@ main {
   }
 
   .menu-toggler {
-    display: block; /* Mostra o botão do hambúrguer */
+    display: block;
   }
 }
-  
+
+@media (width >=48em) and (width < 64em) {
+  .init {
+    & img {
+      width: 30rem;
+    }
+    & .logo {
+      & h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .rodape {
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+}
 
 @media (width >=64em) {
   :root {
@@ -628,9 +741,10 @@ main {
     & img {
       width: 40rem;
     }
-
-    & h2 {
-      font-size: 1.2rem;
+    & .logo {
+      & h2 {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -705,144 +819,18 @@ main {
     }
 
     & #contato {
-
       & h2 {
         font-size: 3rem;
       }
-    }
-  }
-}
 
-
-
-.footer {
-  background-color: #0a3150;
-
-  & .rgProfissional {
-    padding-top: 1.3rem;
-    text-align: center;
-  }
-
-  & .OAB {
-    color: #dcc3a9;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding: 0 2rem 2rem 2rem;
-  }
-}
-
-.rodape {
-  padding-bottom: 1rem;
-  border-bottom: solid 1px rgb(31, 70, 103);
-  display: flex;
-
-
-  & .marca {
-    list-style: none;
-    margin: 0.5rem auto;
-
-
-    & h3 {
-      color: #f8f7f8;
-      text-align: start;
-      font-size: 2.9rem;
-      font-weight: 700;
-    }
-
-    & img {
-      width: 20rem;
-    }
-
-    & .slogan {
-      padding: 0.5rem 0 2rem 0;
-      font-size: 1rem;
-    }
-  }
-
-  & .contatos {
-    list-style: none;
-    margin: 0 auto;
-
-    & h3 {
-      color: #dcc3a9;
-      font-size: 1.5rem;
-      font-weight: 700
-    }
-
-    & .telefone {
-      padding-top: 1rem;
-      font-weight: 800;
-    }
-
-    & .email {
-      padding-top: 1rem;
-      font-weight: 800;
-    }
-
-    & .endereco {
-      padding-top: 1rem;
-      font-weight: 800;
-    }
-  }
-
-  & .socialLinks {
-    list-style: none;
-    margin-inline: auto;
-
-    & h3 {
-      color: #dcc3a9;
-      font-size: 1.5rem;
-      font-weight: 700
-    }
-
-    & li {
-      & a {
-        color: #f8f7f8;
-        font-weight: 700;
-        &:hover {
-          color: #dcc3a9;
-        }
-        & i {
-          margin-right: .5rem;
-        }
+      & fieldset {
+        width: 70%;
       }
     }
-
-    & .whatsapp {
-      margin: 1rem;
-    }
-
-    & .facebook {
-      margin: 1rem;
-    }
-
-    & .instagram {
-      margin: 1rem;
-    }
-
-    & .linkedin {
-      margin: 1rem;
-    }
-  }
-}
-
-.consideracoesFinais {
-  padding: 1.7rem;
-  background-color: #0a3150;
-  margin: auto;
-  font-size: 0.6rem;
-
-  & h4 {
-    text-align: center;
-    color: rgb(42, 93, 135);
-
-    & a {
-      font-weight: 600;
-      color: rgb(42, 93, 135);
-      font-style: italic;
-      text-decoration: underline;
-    }
   }
 
+  .rodape {
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
 }
